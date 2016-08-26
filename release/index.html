@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="red-translucent" />
+        <meta name="apple-mobile-web-app-title" content="" /> 
+        <meta content="telephone=no" name="format-detection" />
+        <meta content="email=no" name="format-detection" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>Sls-pic-magnifier:放大镜</title>
+    
+    
+</head>
+    <body>
+        <h2>移动鼠标图片放大镜</h2>
+        
+        <!-- 装小图和放大镜容器 -->
+        <div class="sourceImgContainer"></div>
+
+        <!-- 装大图容器 -->
+        <div class="showImgContainer"></div>
+        
+        <!-- 引入插件js -->
+    
+<script src="js/sls-pic-magnifier.js"></script>
+<script>
+            window.onload=function(){
+                SlsPicMagnifier.init({
+                    //图片地址，必须
+                    imgSrc:"images/img.jpg",
+
+                    //装小图和放大镜容器，支持选择器或者DOM对象，必须
+                    // sourceImgSelector:".sourceImgContainer",
+                    sourceImgSelector:document.querySelector(".sourceImgContainer"),
+                    
+                    //装大图容器，支持选择器或者DOM对象，必须
+                    // showImgSelector:".showImgContainer",
+                    showImgSelector:document.querySelector(".showImgContainer"),
+
+                    //自定义各个元素css样式，规范按照javascript设置css方式书写，可选
+                    css:{
+                        //这三个比较常用
+                        sourceImgContainerCss:{
+                            width:"300px"
+                        },
+                        focusPointContainerCss:{
+                            width:"80px",
+                            height:"80px",
+                            borderRadius:"80px"
+                        },
+                        showImgContainerCss:{
+                            border:"1px solid #ccc",
+                            borderRadius:"5px"
+                        },
+
+
+                        //以下两个虽然可以改，但个人不建议改，没必要
+                        sourImgCss:{},
+                        maxImgCss:{}
+                    }
+                });
+            };
+        </script>
+</body>
+</html>
