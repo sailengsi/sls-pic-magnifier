@@ -1,6 +1,7 @@
 ## sls-pic-magnifier.js使用说明 ##
 此路由采用UMD模式编写，所以不用多说,肯定是兼容node。
 
+npm方式安装：npm install sls-pic-magnifier
 
 演示地址：[http://demo.sailengsi.com/sls-pic-magnifier/release/](http://demo.sailengsi.com/sls-pic-magnifier/release/ "sls-pic-magnifier演示")
 
