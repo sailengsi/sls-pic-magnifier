@@ -1,11 +1,17 @@
-## sls-pic-magnifier.js 一款原生js实现的图片放大镜插件 ##
+## sls-pic-magnifier.js使用说明 ##
+此路由采用UMD模式编写，所以不用多说,肯定是兼容node。
 
-项目采用fis编写，目录结构如下：
-	
-- div	#开发源码
-- release	#fis编译代码
 
-两个目录的唯一区别就是js文件夹下的sls-pic-magnifier.js，div是源码，release是压缩后的。
+演示地址：[http://demo.sailengsi.com/sls-pic-magnifier/release/](http://demo.sailengsi.com/sls-pic-magnifier/release/ "sls-pic-magnifier演示")
+
+github地址：[https://github.com/sailengsi/sls-pic-magnifier](https://github.com/sailengsi/sls-pic-magnifier "个人github")
+
+代码第一更新地址：[http://gitlab.zhangdonna.com/commons/sls-pic-magnifier](http://gitlab.zhangdonna.com/commons/sls-pic-magnifier "个人gitlab")
+
+本项目采用fis编写，项目结构：
+
+- dev   #开发源码
+- release #fis编译代码
 
 
 此插件使用方法如下：
