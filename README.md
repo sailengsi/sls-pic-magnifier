@@ -24,7 +24,7 @@ github地址：[https://github.com/sailengsi/sls-pic-magnifier](https://github.c
     <div class="showImgContainer"></div>
 	
 	<!-- 引入插件js -->
-	<script src="js/sls-pic-magnifier.js"></script>
+	<script src="libs/sls-pic-magnifier.js"></script>
 	<script>
             window.onload=function(){
                 SlsPicMagnifier.init({
