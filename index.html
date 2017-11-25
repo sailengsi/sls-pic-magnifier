@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h2>github：<span class="github-url"></span></h2>
+	<h2>gitee：<span class="gitee-url"></span></h2>
+	<h2>Coding：<span class="coding-url"></span></h2>
+	<script>
+		var doc = document;
+		var githubUrlDom = doc.querySelector('.github-url'),
+		var giteeUrlDom = doc.querySelector('.gitee-url'),
+		var codingUrlDom = doc.querySelector('.coding-url');
+		var location = window.location,
+			selfHost = location.host,
+			repoName = location.pathname.split('/')[1],
+			gitHost = '',
+			username = 'sailengsi';
+		switch(selfHost) {
+			case 'sailengsi.github.io':
+				gitHost = 'github.com';
+				break;
+			case 'sailengsi.coding.me':
+				gitHost = 'coding.net';
+				break;
+			case 'sailengsi.gitee.io':
+				gitHost = 'gitee.com';
+				break;
+		}
+		githubUrlDom.innerHTML = 'https://github.com/sailengsi/'+repoName;
+		giteeUrlDom.innerHTML = 'https://gitee.com/sailengsi/'+repoName;
+		codingUrlDom.innerHTML = 'https://coding.net/u/sailengsi/'+repoName+'/git';
+	</script>
+</body>
+</html>
